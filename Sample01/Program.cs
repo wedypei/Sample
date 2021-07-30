@@ -18,7 +18,7 @@ namespace Sample01
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-                .ConfigureAppConfiguration(//加载自定义的json文件
+                .ConfigureAppConfiguration(   //加载自定义的json文件
                     (HostBuilderContext, config) =>
                     {
                         var env = HostBuilderContext.HostingEnvironment;
